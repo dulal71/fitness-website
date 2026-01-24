@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+body{
+    background-color: rgba(17, 17, 17, 1);
+}
+.btn{
+    padding: 8px 28px;
+    background-color:rgba(230, 83, 60, 1) ;
+    border-radius:39px ;
+    color:rgba(255, 255, 255, 1)  ;
+}
+.light-btn{
+     padding: 8px 28px;
+   border:1px solid rgba(255, 255, 255, 1) ;
+    border-radius:39px ;
+    color:#ffffff;
+    background-color: transparent;
+    
+}
+.orange{
+   width:220px; 
+}
+
+.section-title{
+    font-size:5rem;
+    color: #ffffff;
+  
+
+}
+.section-discription{
+  margin: 28px 0;
+  color:rgba(255, 255, 255, 0.5) ;  
+}
+
+
+
+nav{
+  
+    margin:45px auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.nav-logo{
+  color: rgba(230, 83, 60, 1); 
+  font-size: 2rem;
+  font-weight: 800; 
+  font-style: italic;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    border:1px solid  rgba(255, 255, 255, 0.1);
+    border-radius:39px;
+    padding-right:8px;
+
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+   font-size: 1rem; 
+   color:rgba(255, 255, 255, 1) ;
+   text-decoration: none;
+}
+.nav-icon{
+    color:rgba(255, 255, 255, 1)  ;
+    /* display: inline; */
+    margin-right: 20px;
+    display: none;
+}
+#hero-section{
+  
+    display: flex;
+    min-height: 600px;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+
+
+   
+}
+
+.left-section{
+  width: 50%;
+    
+}
+
+.right-scetion{
+   
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+     position: relative;
+     
+}
+.hero-button{
+    display: flex;
+    gap:15px;
+}
+.right-scetion img{
+    width: 60%;
+}
+.tootl-tip{
+    background-color: rgba(128, 128, 128, 0.35);
+    position: absolute;
+    right: 0;
+    padding:20px ;
+    width: 193px;
+    height: 98px;
+    border-radius:12px;
+    top: 20%;
+    right: -10%;
+
+}
+.tootl-tip h2 , p{
+    color: #ffffff;
+}
+.tootl-tip-2{
+  background-color: rgba(128, 128, 128, 0.45);
+    position: absolute;
+    padding:20px ;
+    width: 193px;
+    height: 98px;
+    border-radius:12px;
+    top: 70%;
+      
+    left: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive style start */
+@media screen and (max-width:576px){
+.nav-list{
+    display: none;
+}
+.nav-icon{
+   
+    display:inline;
+}
+    
+}
