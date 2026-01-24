@@ -22,25 +22,20 @@ body{
    border:1px solid rgba(255, 255, 255, 1) ;
     border-radius:39px ;
     color:#ffffff;
-    background-color: transparent;
-    
+    background-color: transparent;    
 }
 .orange{
-   width:220px; 
+max-width:220px; 
 }
 
 .section-title{
     font-size:5rem;
     color: #ffffff;
-  
-
 }
 .section-discription{
   margin: 28px 0;
   color:rgba(255, 255, 255, 0.5) ;  
 }
-
-
 
 nav{
   
@@ -81,15 +76,10 @@ nav{
     display: none;
 }
 #hero-section{
-  
-    display: flex;
-    min-height: 600px;
-    max-width: 1200px;
-    padding: 10px;
-    margin: 0 auto;
-
-
-   
+display: flex;
+max-width: 1200px;
+padding: 10px;
+margin: 0 auto;   
 }
 
 .left-section{
@@ -98,7 +88,7 @@ nav{
 }
 
 .right-scetion{
-   
+   padding: ;
      width: 50%;
      display: flex;
      justify-content: flex-end;
@@ -113,12 +103,12 @@ nav{
     width: 60%;
 }
 .tootl-tip{
-    background-color: rgba(128, 128, 128, 0.35);
+    background-color: rgba(128, 128, 128, 0.179);
     position: absolute;
     right: 0;
     padding:20px ;
-    width: 193px;
-    height: 98px;
+    max-width: 193px;
+    max-height: 98px;
     border-radius:12px;
     top: 20%;
     right: -10%;
@@ -128,15 +118,26 @@ nav{
     color: #ffffff;
 }
 .tootl-tip-2{
-  background-color: rgba(128, 128, 128, 0.45);
+  background-color:rgba(128, 128, 128, 0.179);
     position: absolute;
-    padding:20px ;
-    width: 193px;
-    height: 98px;
-    border-radius:12px;
+    padding:20px;
+  border-radius:12px;
     top: 70%;
-      
     left: 15%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    gap: 10px;
+}
+.tootl-tip-2 h2,p{
+     color: #ffffff; 
+}
+.tootle-circle{
+    width:50px  ;
+    height: 50px;
+   
+border-radius: 50%;
+    background-color: rgba(230, 83, 60, 1);
 }
 
 
@@ -150,7 +151,7 @@ nav{
 
 
 
-
+/* .training-section */
 
 
 
@@ -160,12 +161,32 @@ nav{
 
 /* responsive style start */
 @media screen and (max-width:576px){
+   nav{
+  padding:0 20px ;} 
 .nav-list{
     display: none;
 }
 .nav-icon{
-   
-    display:inline;
+ display:inline;
 }
+#hero-section{
+flex-direction: column;  
+padding: 50px 20px;
+gap:50px ;
+}
+.left-section ,.right-scetion{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+    
+}
+.right-scetion img{
+    width:50%;
+}
+.tootl-tip{
+ top: 10%;
+ left: 55%;
+}
+
     
 }
