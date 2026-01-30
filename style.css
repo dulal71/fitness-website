@@ -28,11 +28,11 @@ body{
 max-width:220px; 
 }
 
-.section-title{
+.section-title {
     font-size:5rem;
     color: #ffffff;
 }
-.section-discription{
+.section-discription ,.team-discription{
   margin: 28px 0;
   color:rgba(255, 255, 255, 0.5) ;  
 }
@@ -46,7 +46,7 @@ nav{
     align-items: center;
     
 }
-.nav-logo{
+.logo{
   color: rgba(230, 83, 60, 1); 
   font-size: 2rem;
   font-weight: 800; 
@@ -141,6 +141,118 @@ border-radius: 50%;
 }
 
 
+/* habits-section */
+
+#habits-section{
+    margin: 100px auto;
+    max-width:1200px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habits-contant{
+    max-width: 670px;
+    text-align: center;
+}
+.habit-title , .access-title , .team-title{
+  font-weight: 900;
+  font-size: 3rem;  
+  color:rgba(255, 255, 255, 1) ; 
+}
+
+.fitness-section{
+max-width:1200px ;
+display: flex;
+gap: 50px;
+flex-direction: row;
+   
+}
+.fitness{
+  max-width: 232px; 
+  padding: 25px;
+  text-align: center; 
+}
+.fitness-img{
+   width:180px;
+    height: 180px;
+    border-radius:100px;
+}
+.fitness-img img{
+    width:100%;
+    height: 100%;
+    border-radius:100px;
+}
+.fitness-title{
+  color: rgba(255, 255, 255, 1) ;
+  font-size: 1.2rem;  
+  margin-top:1.2rem;
+  margin-bottom:0.5rem ;
+}
+.fitness-discription {
+  color:rgba(255, 255, 255, 0.5) ;  
+}
+
+/* fitness-access */
+#fitness-access{
+    margin: 0 auto;
+    padding:30px ;
+    max-width:1200px ;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:165px ;
+    background-color:rgba(34, 34, 34, 1) ;
+}
+.access-contant{
+    max-width: 500px;
+     
+}
+.access-img{
+    max-width: 500px;
+    border-radius: 18px;
+}
+.access-img img{
+    width: 100%;
+     border-radius: 18px;
+}
+
+/* team */
+#team{
+  margin:80px auto; 
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.team-contant{
+    max-width: 670px;
+    text-align: center;
+}
+.traner{
+  max-width: 1200px;
+  padding:20px ;
+  display: grid; 
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  background-color:rgba(34, 34, 34, 1) ;
+     border-radius: 18px;
+
+}
+.traner-img{
+    border-radius: 18px;
+   
+}
+.traner-img img{
+    width: 100%;
+    height: 100%;
+     border-radius: 18px;
+}
 
 
 
@@ -152,6 +264,7 @@ border-radius: 50%;
 
 
 /* .training-section */
+
 
 
 
@@ -187,6 +300,19 @@ gap:50px ;
  top: 10%;
  left: 55%;
 }
+#habits-section , #fitness-access ,#team{
+    margin:0 27px;
+}
+.fitness-section , #fitness-access{
+gap: 40px;
+flex-direction:column;}
 
-    
+.habit-title{
+  font-size:2rem;  
+ 
+}  
+.traner{
+padding:20px ;
+  grid-template-columns: repeat(1,1fr);
+}  
 }
