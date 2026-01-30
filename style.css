@@ -254,7 +254,56 @@ flex-direction: row;
      border-radius: 18px;
 }
 
+/* footer */
+footer{
+     background-color:rgba(34, 34, 34, 1) ;
+     padding: 65px;
+    
+}
+.footer-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:100px ;
+    
+}
+.footer-contant{
+    max-width:550px;
+}
 
+.Contact{
+    max-width: 550px;
+    display: flex;
+    justify-content: flex-end;
+   flex-direction: row;
+   gap: 100px;
+   
+}
+
+.links h3{
+color:rgba(255, 255, 255, 1) ;
+font-weight: 700;
+font-size: 2rem;
+margin-bottom: 30px;
+}
+.links li{
+list-style: none;
+margin-bottom:20px ;
+}
+.links li a{
+  color:rgba(255, 255, 255, 0.5) ;   
+  font:1.5px;
+  text-decoration: none;
+}
+.copyright{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+}
 
 
 
@@ -303,7 +352,7 @@ gap:50px ;
 #habits-section , #fitness-access ,#team{
     margin:0 27px;
 }
-.fitness-section , #fitness-access{
+.fitness-section , #fitness-access ,.footer-section ,.Contact{
 gap: 40px;
 flex-direction:column;}
 
@@ -314,5 +363,8 @@ flex-direction:column;}
 .traner{
 padding:20px ;
   grid-template-columns: repeat(1,1fr);
-}  
+} 
+footer{
+    margin-top:100px ;
+} 
 }
