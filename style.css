@@ -11,11 +11,18 @@
 body{
     background-color: rgba(17, 17, 17, 1);
 }
+:root{
+  --text-light: rgba(255, 255, 255, 0.5) ;
+  --white-color: rgba(255, 255, 255, 1);
+}
+
 .btn{
     padding: 8px 28px;
     background-color:rgba(230, 83, 60, 1) ;
     border-radius:39px ;
     color:rgba(255, 255, 255, 1)  ;
+    border: none;
+    cursor: pointer;
 }
 .light-btn{
      padding: 8px 28px;
@@ -28,18 +35,17 @@ body{
 max-width:220px; 
 }
 
-.section-title {
+.hero-title{
     font-size:5rem;
-    color: #ffffff;
+    color: var(--white-color);
 }
-.section-description ,.team-description{
-  margin: 28px 0;
-  color:rgba(255, 255, 255, 0.5) ;  
+.description{
+  margin: 25px 0;
+  color:var(--text-light);
 }
 
 nav{
-  
-    margin:45px auto;
+margin:45px auto;
     max-width: 1200px;
     display: flex;
     justify-content:space-between;
@@ -66,20 +72,25 @@ nav{
 }
 .nav-list li a{
    font-size: 1rem; 
-   color:rgba(255, 255, 255, 1) ;
+   color:var(--white-color);
    text-decoration: none;
 }
 .nav-icon{
-    color:rgba(255, 255, 255, 1)  ;
-    /* display: inline; */
+color: var(--white-color);
     margin-right: 20px;
     display: none;
 }
-#hero-section{
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+#hero{
 display: flex;
-max-width: 1200px;
 padding: 10px;
-margin: 0 auto;   
+   
 }
 
 .left-section{
@@ -102,7 +113,7 @@ margin: 0 auto;
 .right-section img{
     width: 60%;
 }
-.tootl-tip{
+.tooltip{
     background-color: rgba(128, 128, 128, 0.179);
     position: absolute;
     right: 0;
@@ -114,11 +125,11 @@ margin: 0 auto;
     right: -10%;
 
 }
-.tootl-tip h2 , .tootl-tip p{
-    color: #ffffff;
+.tooltip h2 , .tooltip p{
+    color: var(--white-color);
 }
 
-.tootl-tip-2{
+.tooltip-2{
   background-color:rgba(128, 128, 128, 0.179);
     position: absolute;
     padding:20px;
@@ -130,10 +141,10 @@ margin: 0 auto;
     align-items: center;
     gap: 10px;
 }
-.tootl-tip-2 h2,p{
-     color: #ffffff; 
+.tooltip-2 h2,p{
+color: var(--white-color);
 }
-.tootle-circle{
+.tooltip-circle{
    width:50px  ;
    height: 50px;
    display: flex;
@@ -143,14 +154,13 @@ border-radius: 50%;
     background-color: rgba(230, 83, 60, 1);
 }
 
-.tootle-circle i{
-    color: #ffffff;
+.tooltip-circle i{
+    color: var(--white-color);
 }
 /* habits-section */
 
-#habits-section{
-    margin: 100px auto;
-    max-width:1200px ;
+#habits{
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,11 +175,12 @@ border-radius: 50%;
 .habit-title , .access-title , .team-title{
   font-weight: 900;
   font-size: 3rem;  
-  color:rgba(255, 255, 255, 1) ; 
+  color: var(--white-color);
 }
 
 .fitness-section{
 max-width:1200px ;
+padding: 50px;
 display: flex;
 gap: 50px;
 flex-direction: row;
@@ -197,14 +208,12 @@ flex-direction: row;
   margin-bottom:0.5rem ;
 }
 .fitness-discription {
-  color:rgba(255, 255, 255, 0.5) ;  
+  color: var(--text-light);
 }
 
 /* fitness-access */
 #fitness-access{
-    margin: 0 auto;
     padding:30px ;
-    max-width:1200px ;
     border-radius: 18px;
     display: flex;
     flex-direction: row;
@@ -226,20 +235,18 @@ flex-direction: row;
      border-radius: 18px;
 }
 /* training-section */
-#training-section{
+#training{
   
-   margin:80px auto; 
-  max-width: 1200px;
-  display: flex;
+   padding:80px 0; 
+ display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center; 
 }
 .training-container{
-   
-    display: grid;
+   display: grid;
     grid-template-columns:repeat(4,1fr) ;
-    grid-template-rows: repeat(2,1fr);
+    /* grid-template-rows: repeat(2,1fr); */
 }
 .training-img{
     position: relative;
@@ -336,7 +343,7 @@ background-color: #6e8fe3;
 
 /* team */
 #team{
-  margin:80px auto; 
+  padding:80px 0; 
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -348,7 +355,7 @@ background-color: #6e8fe3;
     max-width: 670px;
     text-align: center;
 }
-.traner{
+.trainer{
   max-width: 1200px;
   padding:20px ;
   display: grid; 
@@ -358,17 +365,17 @@ background-color: #6e8fe3;
      border-radius: 18px;
 
 }
-.traner-img{
+.trainer-img{
     border-radius: 18px;
     position: relative;
    
 }
-.traner-img img{
+.trainer-img img{
     width: 100%;
     height: 100%;
      border-radius: 18px;
 }
-.traner-img h4{
+.trainer-img h4{
   position:absolute; 
   color:rgba(255, 255, 255, 1) ;
   font-size:20px;
@@ -376,7 +383,7 @@ background-color: #6e8fe3;
   bottom:10%;
   left: 10%;
 }
-.traner-img p{
+.trainer-img p{
   position:absolute; 
   color:rgba(255, 255, 255, 1) ;
   font-size:1rem;
@@ -392,8 +399,6 @@ footer{
     
 }
 .footer-section{
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -438,7 +443,7 @@ margin-bottom:20px ;
 
 /* responsive style start */
 @media screen and (max-width:576px){
- .section-title {
+.hero-title {
     font-size:3rem;
 }  
 nav{
@@ -449,7 +454,7 @@ margin: 30px 27px;}
 .nav-icon{
  display:inline;
 }
-#hero-section{
+#hero{
 flex-direction: column;  
 gap:50px ;
 padding:0 27px;
@@ -466,22 +471,22 @@ padding:0 27px;
 .right-section img{
     width: 60%;
 }
-.tootl-tip{
+.tooltip{
     padding:10px ;
     top: 0%;
     right:10%;
 
 }
-.tootl-tip p , .tootl-tip-2 p{
+.tooltip p , .tooltip-2 p{
     font-size:10px;
 }
-.tootl-tip-2{
+.tooltip-2{
     padding:10px;
     top: 50%;
     left:0%;
     gap:5px;
 }
-#fitness-access ,#team , #training-section{
+#fitness-access ,#team , #training{
     margin:0 27px;
 }
 .fitness-section , #fitness-access ,.footer-section ,.Contact{
@@ -492,7 +497,7 @@ flex-direction:column;}
   font-size:2rem;  
  
 }  
-.traner{
+.trainer{
 padding:20px ;
   grid-template-columns: repeat(1,1fr);
 } 
