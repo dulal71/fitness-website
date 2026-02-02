@@ -31,7 +31,7 @@ body{
     color:#ffffff;
     background-color: transparent;    
 }
-.orange{
+.large{
 max-width:220px; 
 }
 
@@ -39,11 +39,20 @@ max-width:220px;
     font-size:5rem;
     color: var(--white-color);
 }
+.title{
+  font-weight: 900;
+  font-size: 3rem;  
+  color: var(--white-color);
+}
 .description{
   margin: 25px 0;
   color:var(--text-light);
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
 nav{
 margin:45px auto;
     max-width: 1200px;
@@ -81,12 +90,6 @@ color: var(--white-color);
     display: none;
 }
 
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
 #hero{
 display: flex;
 padding: 10px;
@@ -94,12 +97,10 @@ padding: 10px;
 }
 
 .left-section{
-  width: 50%;
-    
+  width: 50%;   
 }
 
 .right-section{
-   padding: ;
      width: 50%;
      display: flex;
      justify-content: flex-end;
@@ -172,11 +173,7 @@ border-radius: 50%;
     padding: 0 10px;
     text-align: center;
 }
-.habit-title , .access-title , .team-title{
-  font-weight: 900;
-  font-size: 3rem;  
-  color: var(--white-color);
-}
+
 
 .fitness-section{
 max-width:1200px ;
@@ -246,7 +243,7 @@ flex-direction: row;
 .training-container{
    display: grid;
     grid-template-columns:repeat(4,1fr) ;
-    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-rows: repeat(2,1fr);
 }
 .training-img{
     position: relative;
@@ -257,11 +254,11 @@ width: 100%;
 height:100%;
 mix-blend-mode:multiply;
 }
-.img-1{
+.exercise1{
     background-color:#99e4d6;
    
 }
-.img-1 >h4{
+.exercise1 >h4{
     position: absolute;
     left: 10%;
     top:5%;
@@ -270,11 +267,11 @@ mix-blend-mode:multiply;
       z-index: 1;
        font-weight: 500;
 }
-.img-2{
+.exercise2 {
     background-color:  #e87575;
   
 }
-.img-2 >h4{
+.exercise2 >h4{
     position: absolute;
     left: 10%;
     top:10%;
@@ -284,10 +281,10 @@ mix-blend-mode:multiply;
     font-size:20px;
     
 }
-.img-3{
+.exercise3 {
   background-color: #CCCCCC;  
 }
-.img-3 >h4{
+.exercise3 >h4{
     position: absolute;
     left: 10%;
     bottom:6%;
@@ -298,10 +295,10 @@ mix-blend-mode:multiply;
 }
 
 
-.img-4{
+.exercise4{
     background-color: #a1999998;
 }
-.img-4 >h4{
+.exercise4 >h4{
     position: absolute;
     right: 10%;
     top:10%;
@@ -311,10 +308,10 @@ mix-blend-mode:multiply;
      font-size:20px;
     
 }
-.img-5{
+.exercise5{
 background-color: #42FF00;
 }
-.img-5 >h4{
+.exercise5 >h4{
     position: absolute;
     left: 10%;
     bottom:8%;
@@ -324,10 +321,10 @@ background-color: #42FF00;
     font-size:20px;
     
 }
-.img-6{
+.exercise6{
 background-color: #6e8fe3;
 }
-.img-6 >h4{
+.exercise6 >h4{
     position: absolute;
     left: 10%;
     bottom:10%;
@@ -337,7 +334,7 @@ background-color: #6e8fe3;
      font-weight: 500;
     
 }
-.img-2 ,.img-4{
+.exercise2 ,.exercise4{
     grid-column:span 2;
 }
 
@@ -457,7 +454,7 @@ margin: 30px 27px;}
 #hero{
 flex-direction: column;  
 gap:50px ;
-padding:0 27px;
+padding:0px;
 }
 .left-section ,.right-section{
   width: 100%;
@@ -466,10 +463,7 @@ padding:0 27px;
     
 }
 .right-section img{
-    width:50%;
-}
-.right-section img{
-    width: 60%;
+    width: 50%;
 }
 .tooltip{
     padding:10px ;
@@ -486,14 +480,14 @@ padding:0 27px;
     left:0%;
     gap:5px;
 }
-#fitness-access ,#team , #training{
+.container{
     margin:0 27px;
 }
 .fitness-section , #fitness-access ,.footer-section ,.Contact{
 gap: 40px;
 flex-direction:column;}
 
-.habit-title , .access-title , .team-title{
+.title{
   font-size:2rem;  
  
 }  
@@ -505,10 +499,165 @@ padding:20px ;
    grid-template-columns:repeat(1,1fr) ;
     grid-template-rows: repeat(1,1fr);
 }
-.img-2 ,.img-4{
+.exercise2 ,.exercise4{
     grid-column:span 1;
 }
 footer{
     margin-top:100px ;
 } 
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+   nav{
+margin: 30px 27px;}  
+
+#hero{
+flex-direction: column;  
+gap:50px ;
+padding:20px;
+}
+.left-section ,.right-section{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+    
+}
+.right-section img{
+    width: 50%;
+}
+
+.tooltip{
+    padding:10px ;
+    top: 0%;
+    right:20%;
+
+}
+.tooltip p , .tooltip-2 p{
+    font-size:15px;
+}
+.tooltip-2{
+    padding:10px;
+    top: 50%;
+    left:0%;
+    gap:5px;
+}
+.container{
+    margin:0 27px;
+}
+
+
+#fitness-access{
+    padding:20px ;
+    flex-direction: column;
+    gap:80px ;
+    
+}
+
+.fitness-section{
+justify-content: center;
+    gap: 30px;
+flex-wrap: wrap;}
+
+.training-container{
+    grid-template-columns:repeat(2,1fr) ;
+    grid-template-rows: auto;
+}
+.exercise2 ,.exercise4{
+    grid-column:span 1;
+}
+.trainer{
+  grid-template-columns: repeat(2,1fr);
+
+}
+.footer-section{
+    flex-direction: column;
+    justify-content:flex-start;
+    gap:50px ;
+    
+}
+.Contact{
+    justify-content: flex-start;
+   flex-direction: row;
+   
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+ nav{
+margin: 30px 30px;
+ } 
+ #hero{ 
+gap:40px ;
+padding:0px;
+}
+.left-section ,.right-section{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+    
+}
+.right-section img{
+    width: 70%;
+}
+.tooltip{
+    padding:10px ;
+    top: 20%;
+    right:10%;
+
+}
+.tooltip p , .tooltip-2 p{
+    font-size:10px;
+}
+.tooltip-2{
+    padding:10px;
+    top: 50%;
+    left:0%;
+    gap:5px;
+}
+.container{
+    margin:0 27px;
+}
+#fitness-access{
+    padding:20px ;
+    flex-direction: column;
+    gap:80px ;
+    
+}
+
+.fitness-section{
+justify-content: center;
+    gap: 30px;
+flex-wrap: wrap;}
+
+.access-img{
+    max-width:100%;
+    border-radius: 18px;
+}
+.training-container{
+    grid-template-columns:repeat(2,1fr) ;
+    grid-template-rows: auto;
+}
+.exercise2 ,.exercise4{
+    grid-column:span 1;
+}
+.trainer{
+  grid-template-columns: repeat(2,1fr);
+
+}
+.footer-section{
+    flex-direction: column;
+    justify-content:flex-start;
+    gap:50px ;
+    
+}
+.Contact{
+    justify-content: flex-start;
+   flex-direction: row;
+   
+}
+
+
+
+}
+
